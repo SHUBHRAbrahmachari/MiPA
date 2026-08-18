@@ -1,0 +1,20 @@
+{
+  "jwt_duration_in_minutes": 30,
+  "token_cleanup_trigger": 10000,
+  "token_cleanup_target": 5000,
+
+  "model_providers": ["openai", "anthropic", "google", "huggingface", "openrouter"],
+  "provider_to_api_key_mapping": {
+        "anthropic": "ANTHROPIC_API_KEY",
+        "google": "GOOGLE_API_KEY",
+        "openai": "OPENAI_API_KEY",
+        "huggingface": "HUGGINGFACE_API_KEY",
+        "openrouter": "OPENROUTER_API_KEY"
+  },
+  "mcp_servers": {
+    "mipa-mcp-server": {
+        "url": "http://localhost:8001/mcp",
+        "transport": "streamable-http"
+    }
+  }
+}
